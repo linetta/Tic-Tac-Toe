@@ -1,0 +1,106 @@
+    @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+    html, body {
+        height: 100%;
+    }
+    body {
+        background-color: #fdefd2;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSI1MCUiIGN5PSIwJSIgcj0iMTExLjgwMzM5ODg3NDk4OTQ4JSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjZmFkZmE1IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSI1MCUiIGN5PSIwJSIgcj0iMTExLjgwMzM5ODg3NDk4OTQ4JSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjZmFkZmE1IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==),
+        -webkit-gradient(radial, center top, 0, center top, 644, color-stop(0, rgb(255, 255, 255)), color-stop(1, rgb(250, 223, 165)));
+        background-image: -webkit-repeating-radial-gradient(center top, ellipse farthest-corner, rgb(255, 255, 255) 0%, rgb(250, 223, 165) 100%);
+        background-image: repeating-radial-gradient(ellipse farthest-corner at center top, rgb(255, 255, 255) 0%, rgb(250, 223, 165) 100%);
+        background-image: -ms-repeating-radial-gradient(center top, ellipse farthest-corner, rgb(255, 255, 255) 0%, rgb(250, 223, 165) 100%);
+    }
+    #w {
+        animation-duration:3s;
+        animation-name:redsize;
+        animation-timing-function:cubic-bezier(.8,1.5,.2,-1);
+        animation-iteration-count:100;
+    }
+
+    @keyframes redsize {
+        from {
+            font-size: 60px;
+        }
+        to {
+            font-size: 75px;
+            color: red;
+            font-weight: 500;
+        }
+    }
+
+    #game {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .block:hover {
+        background: #8a8686;
+        opacity: 0.5;
+    }
+
+    .block {
+        font-family: 'Indie Flower', cursive;
+        width: 100px;
+        height: 100px;
+        float: left;
+        border: 0 solid #3d3b3b;
+        border-right-width: 6px;
+        border-bottom-width: 6px;
+        opacity: 1;
+        line-height: 100px;
+        text-align: center;
+        font-size: 60px;
+        text-transform: uppercase;
+    }
+
+    .block:nth-child(3) {
+        border-right-width: 0;
+    }
+
+    .block:nth-child(6) {
+        border-right-width: 0;
+    }
+
+    .block:nth-child(9) {
+        border-right-width: 0;
+        border-bottom-width: 0;
+    }
+
+    .block:nth-child(7) {
+        border-bottom-width: 0;
+    }
+
+    .block:nth-child(8) {
+        border-bottom-width: 0;
+    }
+
+    .title {
+        font-family: 'Indie Flower', cursive;
+        margin-top: 30px;
+        font-size: 39px;
+        text-align: center;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    #newGame {
+        font-family: 'Indie Flower', cursive;
+        height: 43px;
+        display: block;
+        position: relative;
+        border: 1px solid white;
+        margin: 0 auto;
+        top: 30px;
+    }
+
+    body h1 {
+        font-family: 'Indie Flower', cursive;
+        display: block;
+        text-align: center;
+        margin-top: 100px;
+        font-size: 60px;
+        color: #333;
+        font-weight:600;
+    }

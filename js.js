@@ -21,7 +21,7 @@
                 checkWin(player);
             }
         }
-
+    };
         function checkWin(curPlayer) {
 
             const w = document.getElementsByClassName('block');
@@ -55,8 +55,6 @@
                 }
             });
         }
-
-    }
 
 
     };
